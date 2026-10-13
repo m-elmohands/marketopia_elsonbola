@@ -1,0 +1,77 @@
+<?php
+
+namespace App\Filament\Resources\ProductVariants;
+
+use App\Domain\Catalog\Models\ProductVariant;
+use App\Filament\Resources\ProductVariants\Pages\CreateProductVariant;
+use App\Filament\Resources\ProductVariants\Pages\EditProductVariant;
+use App\Filament\Resources\ProductVariants\Pages\ListProductVariants;
+use App\Filament\Resources\ProductVariants\Schemas\ProductVariantForm;
+use App\Filament\Resources\ProductVariants\Tables\ProductVariantsTable;
+use App\Filament\Support\MediaRelationManager;
+use BackedEnum;
+use Filament\Resources\Resource;
+use Filament\Schemas\Schema;
+use Filament\Support\Icons\Heroicon;
+use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\SoftDeletingScope;
+
+class ProductVariantResource extends Resource
+{
+    protected static ?string $model = ProductVariant::class;
+
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+
+    public static function getModelLabel(): string
+    {
+        return __('Pack size');
+    }
+
+    public static function getPluralModelLabel(): string
+    {
+        return __('Pack sizes');
+    }
+
+    public static function getNavigationGroup(): ?string
+    {
+        return __('Catalog');
+    }
+
+    public static function getEloquentQuery(): Builder
+    {
+        return parent::getEloquentQuery()->with('product.translations');
+    }
+
+    public static function form(Schema $schema): Schema
+    {
+        return ProductVariantForm::configure($schema);
+    }
+
+    public static function table(Table $table): Table
+    {
+        return ProductVariantsTable::configure($table);
+    }
+
+    public static function getRelations(): array
+    {
+        return [MediaRelationManager::class];
+    }
+
+    public static function getPages(): array
+    {
+        return [
+            'index' => ListProductVariants::route('/'),
+            'create' => CreateProductVariant::route('/create'),
+            'edit' => EditProductVariant::route('/{record}/edit'),
+        ];
+    }
+
+    public static function getRecordRouteBindingEloquentQuery(): Builder
+    {
+        return parent::getRecordRouteBindingEloquentQuery()
+            ->withoutGlobalScopes([
+                SoftDeletingScope::class,
+            ]);
+    }
+}

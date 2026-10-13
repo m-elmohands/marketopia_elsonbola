@@ -1,0 +1,50 @@
+name: Frontend checks
+on:
+  push:
+    paths: ['frontend/**', 'backend/**', '.github/workflows/frontend.yml']
+  pull_request:
+    paths: ['frontend/**', 'backend/**', '.github/workflows/frontend.yml']
+permissions:
+  contents: read
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    env:
+      WEBSITE_DEMO_MODE: 'false'
+      SITE_URL: http://localhost:3000
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: pdo_sqlite, gd, exif, intl, mbstring, zip
+          coverage: none
+          tools: composer:v2
+      - run: composer install --no-interaction --prefer-dist
+        working-directory: backend
+      - run: php scripts/export-frontend-fixtures.php
+        working-directory: backend
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci --no-audit --no-fund
+      - run: npm run format:check
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run test
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: frontend-browser-report
+          path: |
+            frontend/playwright-report/
+            frontend/test-results/
+          retention-days: 14

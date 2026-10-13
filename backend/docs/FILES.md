@@ -1,0 +1,209 @@
+# Backend implementation files
+
+All files below belong to the new backend application. The existing Facebook export and PRD/ERD are unchanged. Composer dependencies, runtime files, the local environment, and generated Filament assets are excluded.
+
+- `backend/.editorconfig`
+- `backend/.env.example`
+- `backend/.env.production.example`
+- `backend/.env.staging.example`
+- `backend/.gitattributes`
+- `backend/.gitignore`
+- `backend/.npmrc`
+- `backend/AGENTS.md`
+- `backend/CLAUDE.md`
+- `backend/README.md`
+- `backend/app/Console/Commands/CreateAdministrator.php`
+- `backend/app/Domain/Administration/Actions/SetAdminLocale.php`
+- `backend/app/Domain/Administration/Http/Controllers/AdminLocaleController.php`
+- `backend/app/Domain/Administration/Http/Requests/SetAdminLocaleRequest.php`
+- `backend/app/Domain/Administration/Observers/UserObserver.php`
+- `backend/app/Domain/Administration/Policies/UserPolicy.php`
+- `backend/app/Domain/Audit/Models/AuditLog.php`
+- `backend/app/Domain/Audit/Policies/AuditLogPolicy.php`
+- `backend/app/Domain/Audit/Services/RecordAudit.php`
+- `backend/app/Domain/Catalog/Http/Controllers/ProductController.php`
+- `backend/app/Domain/Catalog/Http/Resources/ProductResource.php`
+- `backend/app/Domain/Catalog/Http/Resources/ProductVariantResource.php`
+- `backend/app/Domain/Catalog/Models/Product.php`
+- `backend/app/Domain/Catalog/Models/ProductTranslation.php`
+- `backend/app/Domain/Catalog/Models/ProductVariant.php`
+- `backend/app/Domain/Catalog/Observers/ProductVariantObserver.php`
+- `backend/app/Domain/Catalog/Services/BrowseProducts.php`
+- `backend/app/Domain/Content/Actions/DeleteContent.php`
+- `backend/app/Domain/Content/Actions/ForceDeleteContent.php`
+- `backend/app/Domain/Content/Actions/GetPublicPage.php`
+- `backend/app/Domain/Content/Actions/SetPublication.php`
+- `backend/app/Domain/Content/Http/Controllers/PageController.php`
+- `backend/app/Domain/Content/Http/Resources/PageResource.php`
+- `backend/app/Domain/Content/Models/Page.php`
+- `backend/app/Domain/Content/Models/PageTranslation.php`
+- `backend/app/Domain/Content/Policies/PagePolicy.php`
+- `backend/app/Domain/Content/Services/PublicationValidator.php`
+- `backend/app/Domain/Settings/Actions/GetBusinessSettings.php`
+- `backend/app/Domain/Settings/Actions/SaveContactNumber.php`
+- `backend/app/Domain/Settings/Http/Controllers/BusinessSettingController.php`
+- `backend/app/Domain/Settings/Http/Resources/BusinessSettingResource.php`
+- `backend/app/Domain/Settings/Models/BusinessSetting.php`
+- `backend/app/Domain/Settings/Models/BusinessSettingTranslation.php`
+- `backend/app/Domain/Settings/Models/ContactNumber.php`
+- `backend/app/Domain/Settings/Observers/SettingsObserver.php`
+- `backend/app/Domain/Settings/Policies/BusinessSettingPolicy.php`
+- `backend/app/Domain/Shared/Actions/SaveWebsiteRecord.php`
+- `backend/app/Domain/Shared/Concerns/HasWebsiteMedia.php`
+- `backend/app/Domain/Shared/Http/ApiResponse.php`
+- `backend/app/Domain/Shared/Http/Requests/PublicContentRequest.php`
+- `backend/app/Domain/Shared/Http/Resources/MediaResource.php`
+- `backend/app/Domain/Shared/Http/Resources/WebsiteResource.php`
+- `backend/app/Domain/Shared/Jobs/RevalidateFrontend.php`
+- `backend/app/Domain/Shared/Observers/TranslationObserver.php`
+- `backend/app/Domain/Shared/Observers/WebsiteContentObserver.php`
+- `backend/app/Domain/Shared/Policies/ContentPolicy.php`
+- `backend/app/Domain/Shared/Services/ContentCache.php`
+- `backend/app/Domain/Shared/Services/MediaMetadata.php`
+- `backend/app/Filament/Resources/AuditLogs/AuditLogResource.php`
+- `backend/app/Filament/Resources/AuditLogs/Pages/ListAuditLogs.php`
+- `backend/app/Filament/Resources/AuditLogs/Schemas/AuditLogForm.php`
+- `backend/app/Filament/Resources/AuditLogs/Tables/AuditLogsTable.php`
+- `backend/app/Filament/Resources/BusinessSettings/BusinessSettingResource.php`
+- `backend/app/Filament/Resources/BusinessSettings/Pages/EditBusinessSetting.php`
+- `backend/app/Filament/Resources/BusinessSettings/Pages/ListBusinessSettings.php`
+- `backend/app/Filament/Resources/BusinessSettings/Schemas/BusinessSettingForm.php`
+- `backend/app/Filament/Resources/BusinessSettings/Tables/BusinessSettingsTable.php`
+- `backend/app/Filament/Resources/ContactNumbers/ContactNumberResource.php`
+- `backend/app/Filament/Resources/ContactNumbers/Pages/CreateContactNumber.php`
+- `backend/app/Filament/Resources/ContactNumbers/Pages/EditContactNumber.php`
+- `backend/app/Filament/Resources/ContactNumbers/Pages/ListContactNumbers.php`
+- `backend/app/Filament/Resources/ContactNumbers/Schemas/ContactNumberForm.php`
+- `backend/app/Filament/Resources/ContactNumbers/Tables/ContactNumbersTable.php`
+- `backend/app/Filament/Resources/Pages/PageResource.php`
+- `backend/app/Filament/Resources/Pages/Pages/EditPage.php`
+- `backend/app/Filament/Resources/Pages/Pages/ListPages.php`
+- `backend/app/Filament/Resources/Pages/Schemas/PageForm.php`
+- `backend/app/Filament/Resources/Pages/Tables/PagesTable.php`
+- `backend/app/Filament/Resources/ProductVariants/Pages/CreateProductVariant.php`
+- `backend/app/Filament/Resources/ProductVariants/Pages/EditProductVariant.php`
+- `backend/app/Filament/Resources/ProductVariants/Pages/ListProductVariants.php`
+- `backend/app/Filament/Resources/ProductVariants/ProductVariantResource.php`
+- `backend/app/Filament/Resources/ProductVariants/Schemas/ProductVariantForm.php`
+- `backend/app/Filament/Resources/ProductVariants/Tables/ProductVariantsTable.php`
+- `backend/app/Filament/Resources/Products/Pages/CreateProduct.php`
+- `backend/app/Filament/Resources/Products/Pages/EditProduct.php`
+- `backend/app/Filament/Resources/Products/Pages/ListProducts.php`
+- `backend/app/Filament/Resources/Products/ProductResource.php`
+- `backend/app/Filament/Resources/Products/Schemas/ProductForm.php`
+- `backend/app/Filament/Resources/Products/Tables/ProductsTable.php`
+- `backend/app/Filament/Resources/Users/Pages/CreateUser.php`
+- `backend/app/Filament/Resources/Users/Pages/EditUser.php`
+- `backend/app/Filament/Resources/Users/Pages/ListUsers.php`
+- `backend/app/Filament/Resources/Users/Schemas/UserForm.php`
+- `backend/app/Filament/Resources/Users/Tables/UsersTable.php`
+- `backend/app/Filament/Resources/Users/UserResource.php`
+- `backend/app/Filament/Support/ContentActions.php`
+- `backend/app/Filament/Support/CreatesWebsiteRecord.php`
+- `backend/app/Filament/Support/EditsWebsiteRecord.php`
+- `backend/app/Filament/Support/MediaFields.php`
+- `backend/app/Filament/Support/MediaRelationManager.php`
+- `backend/app/Filament/Support/TranslationFields.php`
+- `backend/app/Filament/Widgets/CatalogOverview.php`
+- `backend/app/Http/Controllers/Controller.php`
+- `backend/app/Http/Middleware/SetAdminLocale.php`
+- `backend/app/Models/User.php`
+- `backend/app/Providers/AppServiceProvider.php`
+- `backend/app/Providers/Filament/AdminPanelProvider.php`
+- `backend/artisan`
+- `backend/bootstrap/app.php`
+- `backend/bootstrap/providers.php`
+- `backend/composer.json`
+- `backend/composer.lock`
+- `backend/config/app.php`
+- `backend/config/auth.php`
+- `backend/config/cache.php`
+- `backend/config/cors.php`
+- `backend/config/database.php`
+- `backend/config/filesystems.php`
+- `backend/config/logging.php`
+- `backend/config/mail.php`
+- `backend/config/media-library.php`
+- `backend/config/queue.php`
+- `backend/config/services.php`
+- `backend/config/session.php`
+- `backend/config/translatable.php`
+- `backend/config/website.php`
+- `backend/database/.gitignore`
+- `backend/database/factories/Catalog/ProductFactory.php`
+- `backend/database/factories/Catalog/ProductVariantFactory.php`
+- `backend/database/factories/Content/PageFactory.php`
+- `backend/database/factories/Settings/BusinessSettingFactory.php`
+- `backend/database/factories/Settings/ContactNumberFactory.php`
+- `backend/database/factories/UserFactory.php`
+- `backend/database/migrations/0001_01_01_000000_create_users_table.php`
+- `backend/database/migrations/0001_01_01_000001_create_cache_table.php`
+- `backend/database/migrations/0001_01_01_000002_create_jobs_table.php`
+- `backend/database/migrations/2026_10_11_124216_create_media_table.php`
+- `backend/database/migrations/2026_10_11_130000_add_admin_fields_to_users.php`
+- `backend/database/migrations/2026_10_11_130100_create_products.php`
+- `backend/database/migrations/2026_10_11_130200_create_product_variants.php`
+- `backend/database/migrations/2026_10_11_130300_create_pages.php`
+- `backend/database/migrations/2026_10_11_130400_create_business_settings.php`
+- `backend/database/migrations/2026_10_11_130500_create_contact_numbers.php`
+- `backend/database/migrations/2026_10_11_130600_create_audit_logs.php`
+- `backend/database/seeders/DatabaseSeeder.php`
+- `backend/docs/FILES.md`
+- `backend/docs/openapi.json`
+- `backend/lang/ar.json`
+- `backend/lang/en.json`
+- `backend/phpunit.xml`
+- `backend/public/.htaccess`
+- `backend/public/favicon.ico`
+- `backend/public/index.php`
+- `backend/public/robots.txt`
+- `backend/routes/api.php`
+- `backend/routes/console.php`
+- `backend/routes/web.php`
+- `backend/scripts/lint.php`
+- `backend/tests/Feature/Administration/AdminPanelTest.php`
+- `backend/tests/Feature/Catalog/PublicProductsTest.php`
+- `backend/tests/Feature/Content/PublicationTest.php`
+- `backend/tests/Feature/Settings/SettingsTest.php`
+- `backend/tests/Feature/Shared/RevalidationTest.php`
+- `backend/tests/TestCase.php`
+- `backend/tests/Unit/Content/PublicationValidatorTest.php`
+
+- `.github/workflows/backend.yml`
+
+## Initial website seed data
+
+- `database/seeders/DatabaseSeeder.php`: ordered default seed workflow.
+- `database/seeders/BusinessSettingSeeder.php`: bilingual brand/location and confirmed contacts.
+- `database/seeders/ProductSeeder.php`: bilingual Egyptian rice, published after packs exist.
+- `database/seeders/PackSizeSeeder.php`: 1, 5, 10, and 25 kg packs.
+- `database/seeders/PageSeeder.php`: bilingual complete pages and original placeholder upgrade.
+- `database/seeders/SeedTranslations.php`: fills only missing translation fields.
+- `database/seeders/data/pages.php`: Home, About, and Contact copy and SEO.
+- `database/seeders/WebsiteMediaSeeder.php`: imports bundled assets with localized alt text.
+- `database/seeders/assets/`: source logo, illustration, pack artwork, and provenance.
+- `tests/Feature/Content/WebsiteSeederTest.php`: publication, API, reruns, preservation, and media tests.
+- `tests/Feature/Administration/AdminPanelTest.php`: contact creation uses an isolated settings factory.
+
+- `tests/Feature/Settings/SettingsTest.php`: updates the default seed expectation and isolates seed media/jobs.
+
+## Product details query endpoint
+
+- `routes/api.php`: registers `/api/v1/products/details` before the existing slug route.
+- `app/Domain/Catalog/Http/Requests/ProductDetailsRequest.php`: ID and locale validation.
+- `app/Domain/Catalog/Http/Controllers/ProductController.php`: cached detail response.
+- `app/Domain/Catalog/Services/BrowseProducts.php`: published, localized ID lookup with eager loading.
+- `tests/Feature/Catalog/PublicProductsTest.php`: ID validation, localization, visibility, and cache invalidation.
+- `docs/openapi.json`, `README.md`, `docs/FILES.md`: API documentation and file manifest.
+- Project `docs/PRD.md`, `docs/ERD.md`: updated website and API route examples.
+
+## Frontend data contract audit
+
+- `database/seeders/ProductSeeder.php`, `database/seeders/data/pages.php`: plain text content matching the API contract.
+- `scripts/export-frontend-fixtures.php`: isolated SQLite export of real bilingual API responses.
+- `scripts/lint.php`: includes PHP scripts in syntax checks.
+- `tests/Feature/Content/WebsiteSeederTest.php`: verifies all seeded media files, alt descriptions, and plain text.
+- `README.md`, `docs/FILES.md`: fixture workflow and manifest.
+- Project `.github/workflows/frontend.yml`: PHP/composer setup and isolated response export before frontend checks.
+
+- Local ignored `public/storage`: created and verified the link to `storage/app/public` for uploaded media.
