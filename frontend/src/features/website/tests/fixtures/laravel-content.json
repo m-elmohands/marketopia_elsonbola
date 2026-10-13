@@ -1,0 +1,790 @@
+{
+  "/api/v1/settings?locale=ar": {
+    "data": {
+      "brand_name": "السنبلة الذهبية",
+      "tagline": "أرز مصري لمائدتك",
+      "address": "دنشال، دمنهور، البحيرة، مصر",
+      "opening_hours": null,
+      "quality_highlights": [
+        "أرز مصري.",
+        "أربعة أحجام: ١ و٥ و١٠ و٢٥ كجم.",
+        "تواصل معنا للاستفسار عن التوفر الحالي."
+      ],
+      "email": "zikry0100@gmail.com",
+      "facebook_url": null,
+      "whatsapp_number": null,
+      "map_url": null,
+      "latitude": null,
+      "longitude": null,
+      "contact_numbers": [
+        {
+          "phone": "+201005263014",
+          "is_primary": true
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "collection": "logo",
+          "url": "http://localhost:8000/storage/1/logo.jpg",
+          "web_url": "http://localhost:8000/storage/1/logo.jpg",
+          "thumbnail_url": "http://localhost:8000/storage/1/logo.jpg",
+          "alt": "شعار السنبلة الذهبية",
+          "locale": null
+        }
+      ]
+    },
+    "message": "Success",
+    "errors": null,
+    "meta": []
+  },
+  "/api/v1/pages/home?locale=ar": {
+    "data": {
+      "key": "home",
+      "title": "أرز مصري في قلب مائدتك.",
+      "intro": "مرحباً بك في السنبلة الذهبية. اكتشف الأرز المصري واختر من عبوات ١ و٥ و١٠ و٢٥ كجم لوجباتك اليومية واحتياجات التوريد.",
+      "body": "عبوة لكل مطبخ\n\nمن الطهي اليومي إلى التجمعات العائلية واحتياجات التوريد الأكبر، تعرّف على أحجام العبوات الأربعة واختر ما يناسبك.\n\nمن قلب البحيرة\n\nالسنبلة الذهبية في دنشال، دمنهور. تعرّف على الأرز والعبوات المتاحة وتواصل مع فريقنا للاستفسار عن التوفر.\n\nنساعدك في الاختيار\n\nتواصل معنا للحصول على معلومات المنتجات والاستفسار عن التوريد واختيار حجم العبوة المناسب.",
+      "meta_title": "السنبلة الذهبية | أرز مصري في البحيرة",
+      "meta_description": "اكتشف الأرز المصري من السنبلة الذهبية في دنشال، دمنهور. تعرّف على عبوات ١ و٥ و١٠ و٢٥ كجم وتواصل معنا للاستفسار عن التوريد.",
+      "media": [
+        {
+          "id": 8,
+          "collection": "hero",
+          "url": "http://localhost:8000/storage/8/rice-still-life.png",
+          "web_url": "http://localhost:8000/storage/8/rice-still-life.png",
+          "thumbnail_url": "http://localhost:8000/storage/8/rice-still-life.png",
+          "alt": "صورة توضيحية للأرز",
+          "locale": null
+        }
+      ]
+    },
+    "message": "Success",
+    "errors": null,
+    "meta": []
+  },
+  "/api/v1/pages/about?locale=ar": {
+    "data": {
+      "key": "about",
+      "title": "تعرّف على السنبلة الذهبية",
+      "intro": "أرز مصري من دنشال، دمنهور، البحيرة. نقدم لك معلومات المنتج وأحجام العبوات لمساعدتك في اختيار ما يناسب احتياجاتك.",
+      "body": "موقعنا\n\nالسنبلة الذهبية نشاط متخصص في الأرز، يقع في دنشال، دمنهور، بمحافظة البحيرة في مصر.\n\nالأرز والعبوات\n\nيتوفر الأرز المصري بعبوات ١ و٥ و١٠ و٢٥ كجم، لتوفير خيارات عملية للأسر والعملاء باحتياجات توريد مختلفة.\n\nتواصل مباشر\n\nتصفح معلومات المنتج ثم تواصل مع فريقنا للاستفسار عن التوفر الحالي والتوريد. يسعدنا الرد على أسئلتك حول العبوات المتاحة.",
+      "meta_title": "عن السنبلة الذهبية | أرز مصري",
+      "meta_description": "تعرّف على السنبلة الذهبية في دنشال، دمنهور، البحيرة، وعلى الأرز المصري وأحجام العبوات الأربعة المتاحة.",
+      "media": [
+        {
+          "id": 7,
+          "collection": "hero",
+          "url": "http://localhost:8000/storage/7/rice-still-life.png",
+          "web_url": "http://localhost:8000/storage/7/rice-still-life.png",
+          "thumbnail_url": "http://localhost:8000/storage/7/rice-still-life.png",
+          "alt": "صورة توضيحية للأرز",
+          "locale": null
+        }
+      ]
+    },
+    "message": "Success",
+    "errors": null,
+    "meta": []
+  },
+  "/api/v1/pages/contact?locale=ar": {
+    "data": {
+      "key": "contact",
+      "title": "تواصل معنا",
+      "intro": "تواصل مع السنبلة الذهبية لمعرفة تفاصيل المنتج وأحجام العبوات والاستفسار عن التوريد. موقعنا في دنشال، دمنهور، البحيرة.",
+      "body": "استفسارات المنتج والتوريد\n\nأخبرنا بحجم العبوة الذي يناسبك: ١ أو٥ أو١٠ أو٢٥ كجم. تواصل مع فريقنا للتأكد من التوفر الحالي.\n\nالهاتف والبريد الإلكتروني\n\nاتصل على 01005263014 أو راسلنا على zikry0100@gmail.com.\n\nموقعنا\n\nدنشال، دمنهور، البحيرة، مصر. يُرجى التواصل معنا قبل الزيارة لتأكيد الاتجاهات والتوفر.",
+      "meta_title": "تواصل مع السنبلة الذهبية | استفسارات الأرز",
+      "meta_description": "تواصل مع السنبلة الذهبية في دنشال، دمنهور لمعرفة معلومات الأرز المصري وتوفر العبوات والاستفسار عن التوريد.",
+      "media": []
+    },
+    "message": "Success",
+    "errors": null,
+    "meta": []
+  },
+  "/api/v1/products?locale=ar&featured=1&per_page=3": {
+    "data": [
+      {
+        "id": 1,
+        "slug": "egyptian-rice",
+        "name": "أرز مصري",
+        "short_description": "أرز مصري من السنبلة الذهبية، متوفر بأربعة أحجام تناسب احتياجاتك.",
+        "description": "اكتشف الأرز المصري من السنبلة الذهبية في دنشال، دمنهور، البحيرة. اختر العبوة المناسبة للطهي اليومي والوجبات العائلية واحتياجات التوريد الأكبر.\n\nمتوفر بعبوات ١ و٥ و١٠ و٢٥ كجم. تواصل مع فريقنا للاستفسار عن التوفر الحالي وطلبات التوريد.",
+        "meta_title": "أرز مصري | السنبلة الذهبية",
+        "meta_description": "تعرّف على الأرز المصري من السنبلة الذهبية بعبوات ١ و٥ و١٠ و٢٥ كجم. تواصل معنا في دنشال، دمنهور للاستفسار عن التوفر.",
+        "is_featured": true,
+        "variants": [
+          {
+            "id": 1,
+            "weight_kg": "1.000",
+            "media": [
+              {
+                "id": 3,
+                "collection": "packaging",
+                "url": "http://localhost:8000/storage/3/rice-1kg.jpg",
+                "web_url": "http://localhost:8000/storage/3/rice-1kg.jpg",
+                "thumbnail_url": "http://localhost:8000/storage/3/rice-1kg.jpg",
+                "alt": "تصميم ترويجي لعبوة السنبلة الذهبية 1 كجم",
+                "locale": "ar"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "weight_kg": "5.000",
+            "media": [
+              {
+                "id": 4,
+                "collection": "packaging",
+                "url": "http://localhost:8000/storage/4/rice-5kg.jpg",
+                "web_url": "http://localhost:8000/storage/4/rice-5kg.jpg",
+                "thumbnail_url": "http://localhost:8000/storage/4/rice-5kg.jpg",
+                "alt": "تصميم ترويجي لعبوة السنبلة الذهبية 5 كجم",
+                "locale": "ar"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "weight_kg": "10.000",
+            "media": [
+              {
+                "id": 5,
+                "collection": "packaging",
+                "url": "http://localhost:8000/storage/5/rice-10kg.jpg",
+                "web_url": "http://localhost:8000/storage/5/rice-10kg.jpg",
+                "thumbnail_url": "http://localhost:8000/storage/5/rice-10kg.jpg",
+                "alt": "تصميم ترويجي لعبوة السنبلة الذهبية 10 كجم",
+                "locale": "ar"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "weight_kg": "25.000",
+            "media": [
+              {
+                "id": 6,
+                "collection": "packaging",
+                "url": "http://localhost:8000/storage/6/rice-25kg.jpg",
+                "web_url": "http://localhost:8000/storage/6/rice-25kg.jpg",
+                "thumbnail_url": "http://localhost:8000/storage/6/rice-25kg.jpg",
+                "alt": "تصميم ترويجي لعبوة السنبلة الذهبية 25 كجم",
+                "locale": "ar"
+              }
+            ]
+          }
+        ],
+        "media": [
+          {
+            "id": 2,
+            "collection": "cover",
+            "url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "web_url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "thumbnail_url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "alt": "صورة توضيحية للأرز المصري",
+            "locale": null
+          }
+        ]
+      }
+    ],
+    "message": "Success",
+    "errors": null,
+    "meta": {
+      "current_page": 1,
+      "per_page": 3,
+      "total": 1,
+      "last_page": 1
+    }
+  },
+  "/api/v1/products?locale=ar&sort=sort_order&page=1&per_page=12": {
+    "data": [
+      {
+        "id": 1,
+        "slug": "egyptian-rice",
+        "name": "أرز مصري",
+        "short_description": "أرز مصري من السنبلة الذهبية، متوفر بأربعة أحجام تناسب احتياجاتك.",
+        "description": "اكتشف الأرز المصري من السنبلة الذهبية في دنشال، دمنهور، البحيرة. اختر العبوة المناسبة للطهي اليومي والوجبات العائلية واحتياجات التوريد الأكبر.\n\nمتوفر بعبوات ١ و٥ و١٠ و٢٥ كجم. تواصل مع فريقنا للاستفسار عن التوفر الحالي وطلبات التوريد.",
+        "meta_title": "أرز مصري | السنبلة الذهبية",
+        "meta_description": "تعرّف على الأرز المصري من السنبلة الذهبية بعبوات ١ و٥ و١٠ و٢٥ كجم. تواصل معنا في دنشال، دمنهور للاستفسار عن التوفر.",
+        "is_featured": true,
+        "variants": [
+          {
+            "id": 1,
+            "weight_kg": "1.000",
+            "media": [
+              {
+                "id": 3,
+                "collection": "packaging",
+                "url": "http://localhost:8000/storage/3/rice-1kg.jpg",
+                "web_url": "http://localhost:8000/storage/3/rice-1kg.jpg",
+                "thumbnail_url": "http://localhost:8000/storage/3/rice-1kg.jpg",
+                "alt": "تصميم ترويجي لعبوة السنبلة الذهبية 1 كجم",
+                "locale": "ar"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "weight_kg": "5.000",
+            "media": [
+              {
+                "id": 4,
+                "collection": "packaging",
+                "url": "http://localhost:8000/storage/4/rice-5kg.jpg",
+                "web_url": "http://localhost:8000/storage/4/rice-5kg.jpg",
+                "thumbnail_url": "http://localhost:8000/storage/4/rice-5kg.jpg",
+                "alt": "تصميم ترويجي لعبوة السنبلة الذهبية 5 كجم",
+                "locale": "ar"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "weight_kg": "10.000",
+            "media": [
+              {
+                "id": 5,
+                "collection": "packaging",
+                "url": "http://localhost:8000/storage/5/rice-10kg.jpg",
+                "web_url": "http://localhost:8000/storage/5/rice-10kg.jpg",
+                "thumbnail_url": "http://localhost:8000/storage/5/rice-10kg.jpg",
+                "alt": "تصميم ترويجي لعبوة السنبلة الذهبية 10 كجم",
+                "locale": "ar"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "weight_kg": "25.000",
+            "media": [
+              {
+                "id": 6,
+                "collection": "packaging",
+                "url": "http://localhost:8000/storage/6/rice-25kg.jpg",
+                "web_url": "http://localhost:8000/storage/6/rice-25kg.jpg",
+                "thumbnail_url": "http://localhost:8000/storage/6/rice-25kg.jpg",
+                "alt": "تصميم ترويجي لعبوة السنبلة الذهبية 25 كجم",
+                "locale": "ar"
+              }
+            ]
+          }
+        ],
+        "media": [
+          {
+            "id": 2,
+            "collection": "cover",
+            "url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "web_url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "thumbnail_url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "alt": "صورة توضيحية للأرز المصري",
+            "locale": null
+          }
+        ]
+      }
+    ],
+    "message": "Success",
+    "errors": null,
+    "meta": {
+      "current_page": 1,
+      "per_page": 12,
+      "total": 1,
+      "last_page": 1
+    }
+  },
+  "/api/v1/products?locale=ar&per_page=50": {
+    "data": [
+      {
+        "id": 1,
+        "slug": "egyptian-rice",
+        "name": "أرز مصري",
+        "short_description": "أرز مصري من السنبلة الذهبية، متوفر بأربعة أحجام تناسب احتياجاتك.",
+        "description": "اكتشف الأرز المصري من السنبلة الذهبية في دنشال، دمنهور، البحيرة. اختر العبوة المناسبة للطهي اليومي والوجبات العائلية واحتياجات التوريد الأكبر.\n\nمتوفر بعبوات ١ و٥ و١٠ و٢٥ كجم. تواصل مع فريقنا للاستفسار عن التوفر الحالي وطلبات التوريد.",
+        "meta_title": "أرز مصري | السنبلة الذهبية",
+        "meta_description": "تعرّف على الأرز المصري من السنبلة الذهبية بعبوات ١ و٥ و١٠ و٢٥ كجم. تواصل معنا في دنشال، دمنهور للاستفسار عن التوفر.",
+        "is_featured": true,
+        "variants": [
+          {
+            "id": 1,
+            "weight_kg": "1.000",
+            "media": [
+              {
+                "id": 3,
+                "collection": "packaging",
+                "url": "http://localhost:8000/storage/3/rice-1kg.jpg",
+                "web_url": "http://localhost:8000/storage/3/rice-1kg.jpg",
+                "thumbnail_url": "http://localhost:8000/storage/3/rice-1kg.jpg",
+                "alt": "تصميم ترويجي لعبوة السنبلة الذهبية 1 كجم",
+                "locale": "ar"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "weight_kg": "5.000",
+            "media": [
+              {
+                "id": 4,
+                "collection": "packaging",
+                "url": "http://localhost:8000/storage/4/rice-5kg.jpg",
+                "web_url": "http://localhost:8000/storage/4/rice-5kg.jpg",
+                "thumbnail_url": "http://localhost:8000/storage/4/rice-5kg.jpg",
+                "alt": "تصميم ترويجي لعبوة السنبلة الذهبية 5 كجم",
+                "locale": "ar"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "weight_kg": "10.000",
+            "media": [
+              {
+                "id": 5,
+                "collection": "packaging",
+                "url": "http://localhost:8000/storage/5/rice-10kg.jpg",
+                "web_url": "http://localhost:8000/storage/5/rice-10kg.jpg",
+                "thumbnail_url": "http://localhost:8000/storage/5/rice-10kg.jpg",
+                "alt": "تصميم ترويجي لعبوة السنبلة الذهبية 10 كجم",
+                "locale": "ar"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "weight_kg": "25.000",
+            "media": [
+              {
+                "id": 6,
+                "collection": "packaging",
+                "url": "http://localhost:8000/storage/6/rice-25kg.jpg",
+                "web_url": "http://localhost:8000/storage/6/rice-25kg.jpg",
+                "thumbnail_url": "http://localhost:8000/storage/6/rice-25kg.jpg",
+                "alt": "تصميم ترويجي لعبوة السنبلة الذهبية 25 كجم",
+                "locale": "ar"
+              }
+            ]
+          }
+        ],
+        "media": [
+          {
+            "id": 2,
+            "collection": "cover",
+            "url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "web_url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "thumbnail_url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "alt": "صورة توضيحية للأرز المصري",
+            "locale": null
+          }
+        ]
+      }
+    ],
+    "message": "Success",
+    "errors": null,
+    "meta": {
+      "current_page": 1,
+      "per_page": 50,
+      "total": 1,
+      "last_page": 1
+    }
+  },
+  "/api/v1/products/details?locale=ar&id=1": {
+    "data": {
+      "id": 1,
+      "slug": "egyptian-rice",
+      "name": "أرز مصري",
+      "short_description": "أرز مصري من السنبلة الذهبية، متوفر بأربعة أحجام تناسب احتياجاتك.",
+      "description": "اكتشف الأرز المصري من السنبلة الذهبية في دنشال، دمنهور، البحيرة. اختر العبوة المناسبة للطهي اليومي والوجبات العائلية واحتياجات التوريد الأكبر.\n\nمتوفر بعبوات ١ و٥ و١٠ و٢٥ كجم. تواصل مع فريقنا للاستفسار عن التوفر الحالي وطلبات التوريد.",
+      "meta_title": "أرز مصري | السنبلة الذهبية",
+      "meta_description": "تعرّف على الأرز المصري من السنبلة الذهبية بعبوات ١ و٥ و١٠ و٢٥ كجم. تواصل معنا في دنشال، دمنهور للاستفسار عن التوفر.",
+      "is_featured": true,
+      "variants": [
+        {
+          "id": 1,
+          "weight_kg": "1.000",
+          "media": [
+            {
+              "id": 3,
+              "collection": "packaging",
+              "url": "http://localhost:8000/storage/3/rice-1kg.jpg",
+              "web_url": "http://localhost:8000/storage/3/rice-1kg.jpg",
+              "thumbnail_url": "http://localhost:8000/storage/3/rice-1kg.jpg",
+              "alt": "تصميم ترويجي لعبوة السنبلة الذهبية 1 كجم",
+              "locale": "ar"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weight_kg": "5.000",
+          "media": [
+            {
+              "id": 4,
+              "collection": "packaging",
+              "url": "http://localhost:8000/storage/4/rice-5kg.jpg",
+              "web_url": "http://localhost:8000/storage/4/rice-5kg.jpg",
+              "thumbnail_url": "http://localhost:8000/storage/4/rice-5kg.jpg",
+              "alt": "تصميم ترويجي لعبوة السنبلة الذهبية 5 كجم",
+              "locale": "ar"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weight_kg": "10.000",
+          "media": [
+            {
+              "id": 5,
+              "collection": "packaging",
+              "url": "http://localhost:8000/storage/5/rice-10kg.jpg",
+              "web_url": "http://localhost:8000/storage/5/rice-10kg.jpg",
+              "thumbnail_url": "http://localhost:8000/storage/5/rice-10kg.jpg",
+              "alt": "تصميم ترويجي لعبوة السنبلة الذهبية 10 كجم",
+              "locale": "ar"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weight_kg": "25.000",
+          "media": [
+            {
+              "id": 6,
+              "collection": "packaging",
+              "url": "http://localhost:8000/storage/6/rice-25kg.jpg",
+              "web_url": "http://localhost:8000/storage/6/rice-25kg.jpg",
+              "thumbnail_url": "http://localhost:8000/storage/6/rice-25kg.jpg",
+              "alt": "تصميم ترويجي لعبوة السنبلة الذهبية 25 كجم",
+              "locale": "ar"
+            }
+          ]
+        }
+      ],
+      "media": [
+        {
+          "id": 2,
+          "collection": "cover",
+          "url": "http://localhost:8000/storage/2/rice-still-life.png",
+          "web_url": "http://localhost:8000/storage/2/rice-still-life.png",
+          "thumbnail_url": "http://localhost:8000/storage/2/rice-still-life.png",
+          "alt": "صورة توضيحية للأرز المصري",
+          "locale": null
+        }
+      ]
+    },
+    "message": "Success",
+    "errors": null,
+    "meta": []
+  },
+  "/api/v1/settings?locale=en": {
+    "data": {
+      "brand_name": "Golden Spike",
+      "tagline": "Egyptian rice for your table",
+      "address": "Denshal, Damanhour, Beheira, Egypt",
+      "opening_hours": null,
+      "quality_highlights": [
+        "Egyptian rice.",
+        "Four pack sizes: 1, 5, 10, and 25 kg.",
+        "Contact us for current availability."
+      ],
+      "email": "zikry0100@gmail.com",
+      "facebook_url": null,
+      "whatsapp_number": null,
+      "map_url": null,
+      "latitude": null,
+      "longitude": null,
+      "contact_numbers": [
+        {
+          "phone": "+201005263014",
+          "is_primary": true
+        }
+      ],
+      "media": [
+        {
+          "id": 1,
+          "collection": "logo",
+          "url": "http://localhost:8000/storage/1/logo.jpg",
+          "web_url": "http://localhost:8000/storage/1/logo.jpg",
+          "thumbnail_url": "http://localhost:8000/storage/1/logo.jpg",
+          "alt": "Golden Spike logo",
+          "locale": null
+        }
+      ]
+    },
+    "message": "Success",
+    "errors": null,
+    "meta": []
+  },
+  "/api/v1/pages/home?locale=en": {
+    "data": {
+      "key": "home",
+      "title": "Egyptian rice, at the heart of your table.",
+      "intro": "Welcome to Golden Spike. Discover our Egyptian rice and choose from 1, 5, 10, and 25 kg packs for your everyday meals and supply needs.",
+      "body": "A pack for every kitchen\n\nFrom everyday cooking to family gatherings and larger supply needs, explore our four pack sizes and find the one that suits you.\n\nRooted in Beheira\n\nGolden Spike is based in Denshal, Damanhour. Get to know our rice, browse the available packs, and speak with our team about availability.\n\nLet us help you choose\n\nContact us for product information and supply enquiries. Our team can help you choose a suitable pack size.",
+      "meta_title": "Golden Spike | Egyptian rice in Beheira",
+      "meta_description": "Discover Golden Spike Egyptian rice from Denshal, Damanhour. Explore 1, 5, 10, and 25 kg packs and contact us for supply enquiries.",
+      "media": [
+        {
+          "id": 8,
+          "collection": "hero",
+          "url": "http://localhost:8000/storage/8/rice-still-life.png",
+          "web_url": "http://localhost:8000/storage/8/rice-still-life.png",
+          "thumbnail_url": "http://localhost:8000/storage/8/rice-still-life.png",
+          "alt": "Illustrative rice still life",
+          "locale": null
+        }
+      ]
+    },
+    "message": "Success",
+    "errors": null,
+    "meta": []
+  },
+  "/api/v1/pages/about?locale=en": {
+    "data": {
+      "key": "about",
+      "title": "Meet Golden Spike",
+      "intro": "Egyptian rice from Denshal, Damanhour, Beheira. We bring our product and pack information together to help you choose with confidence.",
+      "body": "Our home\n\nGolden Spike is a rice business based in Denshal, Damanhour, in Egypt’s Beheira governorate.\n\nOur rice\n\nOur Egyptian rice is available in 1, 5, 10, and 25 kg packs. The range gives households and supply customers practical choices for different needs.\n\nA direct conversation\n\nBrowse our product information, then contact our team for current availability and supply enquiries. We welcome questions about the available packs.",
+      "meta_title": "About Golden Spike | Egyptian rice",
+      "meta_description": "Meet Golden Spike, a rice business in Denshal, Damanhour, Beheira. Learn about our Egyptian rice and four available pack sizes.",
+      "media": [
+        {
+          "id": 7,
+          "collection": "hero",
+          "url": "http://localhost:8000/storage/7/rice-still-life.png",
+          "web_url": "http://localhost:8000/storage/7/rice-still-life.png",
+          "thumbnail_url": "http://localhost:8000/storage/7/rice-still-life.png",
+          "alt": "Illustrative rice still life",
+          "locale": null
+        }
+      ]
+    },
+    "message": "Success",
+    "errors": null,
+    "meta": []
+  },
+  "/api/v1/pages/contact?locale=en": {
+    "data": {
+      "key": "contact",
+      "title": "Let’s talk rice",
+      "intro": "Contact Golden Spike for product details, available pack sizes, and supply enquiries. Find us in Denshal, Damanhour, Beheira.",
+      "body": "Product and supply enquiries\n\nTell us which pack size you are interested in: 1, 5, 10, or 25 kg. Contact our team to confirm current availability.\n\nCall or email\n\nCall 01005263014 or email zikry0100@gmail.com.\n\nOur location\n\nDenshal, Damanhour, Beheira, Egypt. Please contact us before visiting to confirm directions and availability.",
+      "meta_title": "Contact Golden Spike | Rice enquiries",
+      "meta_description": "Contact Golden Spike in Denshal, Damanhour for Egyptian rice information, pack availability, and supply enquiries.",
+      "media": []
+    },
+    "message": "Success",
+    "errors": null,
+    "meta": []
+  },
+  "/api/v1/products?locale=en&featured=1&per_page=3": {
+    "data": [
+      {
+        "id": 1,
+        "slug": "egyptian-rice",
+        "name": "Egyptian rice",
+        "short_description": "Egyptian rice from Golden Spike, available in four practical pack sizes.",
+        "description": "Discover Egyptian rice from Golden Spike in Denshal, Damanhour, Beheira. Choose a pack for everyday cooking, family meals, or larger supply needs.\n\nAvailable in 1, 5, 10, and 25 kg packs. Contact our team to discuss current availability and supply enquiries.",
+        "meta_title": "Egyptian rice | Golden Spike",
+        "meta_description": "Explore Golden Spike Egyptian rice in 1, 5, 10, and 25 kg packs. Contact our team in Denshal, Damanhour for availability.",
+        "is_featured": true,
+        "variants": [
+          {
+            "id": 1,
+            "weight_kg": "1.000",
+            "media": []
+          },
+          {
+            "id": 2,
+            "weight_kg": "5.000",
+            "media": []
+          },
+          {
+            "id": 3,
+            "weight_kg": "10.000",
+            "media": []
+          },
+          {
+            "id": 4,
+            "weight_kg": "25.000",
+            "media": []
+          }
+        ],
+        "media": [
+          {
+            "id": 2,
+            "collection": "cover",
+            "url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "web_url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "thumbnail_url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "alt": "Illustrative Egyptian rice arrangement",
+            "locale": null
+          }
+        ]
+      }
+    ],
+    "message": "Success",
+    "errors": null,
+    "meta": {
+      "current_page": 1,
+      "per_page": 3,
+      "total": 1,
+      "last_page": 1
+    }
+  },
+  "/api/v1/products?locale=en&sort=sort_order&page=1&per_page=12": {
+    "data": [
+      {
+        "id": 1,
+        "slug": "egyptian-rice",
+        "name": "Egyptian rice",
+        "short_description": "Egyptian rice from Golden Spike, available in four practical pack sizes.",
+        "description": "Discover Egyptian rice from Golden Spike in Denshal, Damanhour, Beheira. Choose a pack for everyday cooking, family meals, or larger supply needs.\n\nAvailable in 1, 5, 10, and 25 kg packs. Contact our team to discuss current availability and supply enquiries.",
+        "meta_title": "Egyptian rice | Golden Spike",
+        "meta_description": "Explore Golden Spike Egyptian rice in 1, 5, 10, and 25 kg packs. Contact our team in Denshal, Damanhour for availability.",
+        "is_featured": true,
+        "variants": [
+          {
+            "id": 1,
+            "weight_kg": "1.000",
+            "media": []
+          },
+          {
+            "id": 2,
+            "weight_kg": "5.000",
+            "media": []
+          },
+          {
+            "id": 3,
+            "weight_kg": "10.000",
+            "media": []
+          },
+          {
+            "id": 4,
+            "weight_kg": "25.000",
+            "media": []
+          }
+        ],
+        "media": [
+          {
+            "id": 2,
+            "collection": "cover",
+            "url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "web_url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "thumbnail_url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "alt": "Illustrative Egyptian rice arrangement",
+            "locale": null
+          }
+        ]
+      }
+    ],
+    "message": "Success",
+    "errors": null,
+    "meta": {
+      "current_page": 1,
+      "per_page": 12,
+      "total": 1,
+      "last_page": 1
+    }
+  },
+  "/api/v1/products?locale=en&per_page=50": {
+    "data": [
+      {
+        "id": 1,
+        "slug": "egyptian-rice",
+        "name": "Egyptian rice",
+        "short_description": "Egyptian rice from Golden Spike, available in four practical pack sizes.",
+        "description": "Discover Egyptian rice from Golden Spike in Denshal, Damanhour, Beheira. Choose a pack for everyday cooking, family meals, or larger supply needs.\n\nAvailable in 1, 5, 10, and 25 kg packs. Contact our team to discuss current availability and supply enquiries.",
+        "meta_title": "Egyptian rice | Golden Spike",
+        "meta_description": "Explore Golden Spike Egyptian rice in 1, 5, 10, and 25 kg packs. Contact our team in Denshal, Damanhour for availability.",
+        "is_featured": true,
+        "variants": [
+          {
+            "id": 1,
+            "weight_kg": "1.000",
+            "media": []
+          },
+          {
+            "id": 2,
+            "weight_kg": "5.000",
+            "media": []
+          },
+          {
+            "id": 3,
+            "weight_kg": "10.000",
+            "media": []
+          },
+          {
+            "id": 4,
+            "weight_kg": "25.000",
+            "media": []
+          }
+        ],
+        "media": [
+          {
+            "id": 2,
+            "collection": "cover",
+            "url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "web_url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "thumbnail_url": "http://localhost:8000/storage/2/rice-still-life.png",
+            "alt": "Illustrative Egyptian rice arrangement",
+            "locale": null
+          }
+        ]
+      }
+    ],
+    "message": "Success",
+    "errors": null,
+    "meta": {
+      "current_page": 1,
+      "per_page": 50,
+      "total": 1,
+      "last_page": 1
+    }
+  },
+  "/api/v1/products/details?locale=en&id=1": {
+    "data": {
+      "id": 1,
+      "slug": "egyptian-rice",
+      "name": "Egyptian rice",
+      "short_description": "Egyptian rice from Golden Spike, available in four practical pack sizes.",
+      "description": "Discover Egyptian rice from Golden Spike in Denshal, Damanhour, Beheira. Choose a pack for everyday cooking, family meals, or larger supply needs.\n\nAvailable in 1, 5, 10, and 25 kg packs. Contact our team to discuss current availability and supply enquiries.",
+      "meta_title": "Egyptian rice | Golden Spike",
+      "meta_description": "Explore Golden Spike Egyptian rice in 1, 5, 10, and 25 kg packs. Contact our team in Denshal, Damanhour for availability.",
+      "is_featured": true,
+      "variants": [
+        {
+          "id": 1,
+          "weight_kg": "1.000",
+          "media": []
+        },
+        {
+          "id": 2,
+          "weight_kg": "5.000",
+          "media": []
+        },
+        {
+          "id": 3,
+          "weight_kg": "10.000",
+          "media": []
+        },
+        {
+          "id": 4,
+          "weight_kg": "25.000",
+          "media": []
+        }
+      ],
+      "media": [
+        {
+          "id": 2,
+          "collection": "cover",
+          "url": "http://localhost:8000/storage/2/rice-still-life.png",
+          "web_url": "http://localhost:8000/storage/2/rice-still-life.png",
+          "thumbnail_url": "http://localhost:8000/storage/2/rice-still-life.png",
+          "alt": "Illustrative Egyptian rice arrangement",
+          "locale": null
+        }
+      ]
+    },
+    "message": "Success",
+    "errors": null,
+    "meta": []
+  }
+}
